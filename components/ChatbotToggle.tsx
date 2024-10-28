@@ -6,15 +6,17 @@ import Button from "@/components/Button";
 
 const ChatbotToggle = () => {
     const [chatbot, setChatbot] = useState(false);
+    const [buttonContent, setButtonContent] = useState('Chatbot');
 
     const handleClick = () => {
         setChatbot(!chatbot);
+        setButtonContent(prevState => prevState==='Chatbot'? 'X' : 'Chatbot')
     };
 
     return (
         <div>
-            <Button handleClick={handleClick} button_content="Click for action" />
             {chatbot && <Chatbot />}
+            <Button handleClick={handleClick} button_content={buttonContent}/>
         </div>
     );
 };

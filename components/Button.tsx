@@ -9,7 +9,7 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ handleClick, button_content }) => {
     return (
-        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mb-5" onClick={handleClick}>
+        <button className=" absolute bottom-6 right-6 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mb-5" onClick={handleClick}>
             {button_content}
         </button>
     );
