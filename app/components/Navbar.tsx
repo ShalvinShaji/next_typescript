@@ -4,7 +4,7 @@ const Navbar = () => {
     const navItems = { Home: "/", About: "/about", Contact:"/contact" };
 
     return (
-        <nav className="fixed top-0 mt-5 flex items-center justify-center ">
+        <nav className=" mt-5 flex items-center justify-center ">
             <div className="nav-items flex items-center justify-center">
                 {Object.entries(navItems).map(([name, path], i) => (
                     <Link key={i} href={path}>
