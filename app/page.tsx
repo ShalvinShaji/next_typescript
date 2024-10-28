@@ -1,4 +1,4 @@
-import Count from "./components/Count";
+import Count from "@/components/Count";
 
 const page = () => {
   return (
